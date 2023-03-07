@@ -1,0 +1,6 @@
+framework module ChattyWebviews {
+  umbrella header "ChattyWebviews-umbrella.h"
+
+  export *
+  module * { export * }
+}

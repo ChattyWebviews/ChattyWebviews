@@ -1,0 +1,16 @@
+PODS:
+  - ChattyWebviews (0.1.0)
+
+DEPENDENCIES:
+  - ChattyWebviews (from `../`)
+
+EXTERNAL SOURCES:
+  ChattyWebviews:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ChattyWebviews: 2c83312ed3537b546e423dab3b9cafa1c8e77e9e
+
+PODFILE CHECKSUM: 335553a4a1d40c061a41cf238dc155b150d2965d
+
+COCOAPODS: 1.11.3

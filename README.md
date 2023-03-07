@@ -72,7 +72,7 @@ class MainTabBarViewController: UITabBarController {
 ### Step 3
 To receive messages from the webviews you need to conform to the CWMessageDelegate protocol. The code below prints a message sent from the webviews and then responds with another one.
 
-```
+```swift
 extension MainTabBarViewController: CWMessageDelegate {
     
     func controller(_ controller: ChattyWebviews.CWViewController, didReceive message: ChattyWebviews.CWMessage) {

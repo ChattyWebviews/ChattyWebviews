@@ -26,4 +26,15 @@ class InstanceConfiguration: NSObject {
         super.init()
     }
 
+    
+    init(appLocation: URL) {
+        _localURL = "\(InstanceDescriptorDefaults.scheme)://\(InstanceDescriptorDefaults.hostname)"
+        _serverURL = _localURL
+        
+        
+        _appLocation = appLocation
+        
+        
+        super.init()
+    }
 }

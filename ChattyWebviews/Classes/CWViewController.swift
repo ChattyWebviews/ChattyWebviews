@@ -58,6 +58,13 @@ public class CWViewController: UIViewController, WKNavigationDelegate, WKScriptM
         
         self.path = path
     }
+    
+    func configure(appLocation: URL, path: String?) {
+        let configuration = InstanceConfiguration(appLocation: appLocation)
+        assetHandler = CWAssetHandler(router: _Router())
+        assetHandler.setAssetPath(configuration._appLocation.path)
+        self.path = path
+    }
 
     public func sendMessage(_ message: CWMessage) {
         guard let jsonData = try? JSONSerialization.data(

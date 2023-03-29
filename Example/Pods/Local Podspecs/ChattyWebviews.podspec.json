@@ -18,5 +18,10 @@
   "platforms": {
     "ios": "13.0"
   },
-  "source_files": "ChattyWebviews/Classes/**/*"
+  "source_files": "ChattyWebviews/Classes/**/*",
+  "dependencies": {
+    "SSZipArchive": [
+
+    ]
+  }
 }

@@ -1,15 +1,22 @@
 PODS:
-  - ChattyWebviews (0.1.0)
+  - ChattyWebviews (0.1.0):
+    - SSZipArchive
+  - SSZipArchive (2.4.3)
 
 DEPENDENCIES:
   - ChattyWebviews (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - SSZipArchive
 
 EXTERNAL SOURCES:
   ChattyWebviews:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ChattyWebviews: 2c83312ed3537b546e423dab3b9cafa1c8e77e9e
+  ChattyWebviews: d08f3a4904c715337cd1527f75e74330b9cc3e9c
+  SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
 
 PODFILE CHECKSUM: 335553a4a1d40c061a41cf238dc155b150d2965d
 

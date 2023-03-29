@@ -7,80 +7,197 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F9B8E47A9DF3D7F945E22E890F05B56 /* CWAssetHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FFC557322D8C7A78C92C27BFFC13FB /* CWAssetHandler.swift */; };
-		192BB96728BF233E403029B3031BFE30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		2B0A27EC299BD8B500F8AD25 /* ChattyWebviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0A27EB299BD8B500F8AD25 /* ChattyWebviews.swift */; };
-		2B0A27EE299BD95F00F8AD25 /* CWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0A27ED299BD95F00F8AD25 /* CWViewController.swift */; };
-		2C963A4A8421E1ECB72BEAA41F699085 /* ChattyWebviews-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EF743021E52B37783F80AA9560CD9FA3 /* ChattyWebviews-dummy.m */; };
-		3EFFA31F037FA1176C5FA2A087F07B2E /* Pods-ChattyWebviews_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AF83CF167209DDE466D6E46CB29004 /* Pods-ChattyWebviews_Example-dummy.m */; };
-		4B3914D9EDF1BBA539DF936FFE829129 /* Pods-ChattyWebviews_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B76F29619296C785C6BC61250247B85F /* Pods-ChattyWebviews_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		521249FBE952A012D45A546EC2218B36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		84863253653CB6AFC0F7FDC2D2FAAFDD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		02AAC861DAAA2976C067A2F5FEB5BF94 /* mz_crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 813B931EBBD527AC2E04B07881966C70 /* mz_crypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		036A14195520D2E82157EC3B0A10FBEA /* Pods-ChattyWebviews_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AF83CF167209DDE466D6E46CB29004 /* Pods-ChattyWebviews_Example-dummy.m */; };
+		0375E08EAB918325A4289CF6B6E87F3A /* ModuleSynchronizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C78651DA303BBF93B4D4144DC18B38A /* ModuleSynchronizer.swift */; };
+		094AD0ED540C7E98194B31D241FC0736 /* mz_zip_rw.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CDDEBCA568A303501173CF9553E1851 /* mz_zip_rw.c */; };
+		09E4053B24126DF4D4F6AF852F506F0D /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = F78F73AC1E27DF387460E6C9D3BFF7BD /* SSZipArchive.m */; };
+		0A27198DA5786BE01E020E5623239829 /* mz_os.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F787961E0994AA5934713C5C4D8A51F /* mz_os.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0CE5061AE088B950FF214009DDC81936 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952925E838A0DE4D7BDC4EE54022633D /* Foundation.framework */; };
+		11DCB929E22467E8AEB754F4BEB1009A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952925E838A0DE4D7BDC4EE54022633D /* Foundation.framework */; };
+		1301FB27E180FF2BFAE5332B74CE15BE /* mz_zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 49CD09986F496C08770DC5BF839CE774 /* mz_zip.c */; };
+		192BB96728BF233E403029B3031BFE30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952925E838A0DE4D7BDC4EE54022633D /* Foundation.framework */; };
+		1B9C2086B907706D59D859665452D9AC /* mz_strm_os_posix.c in Sources */ = {isa = PBXBuildFile; fileRef = C29F02B018B0DC44C2AC05DFCFFA3EDE /* mz_strm_os_posix.c */; };
+		1D8E5738C2F0008C17205B541A414EA6 /* mz_zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C97796A68E3416C1E0F893499E1417B /* mz_zip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2493E8764466C484CED4C8BCC11EFF87 /* FIleDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96191102B73395BA79D28920DB94CF15 /* FIleDownloader.swift */; };
+		280AE257C0AD6BFDAE8DDD0369847D08 /* mz_crypt_apple.c in Sources */ = {isa = PBXBuildFile; fileRef = F86615AF86FD3D110F4C387667DF2EAA /* mz_crypt_apple.c */; };
+		2A473E6E69997AF54A9256666C3A65A2 /* SSZipArchive-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 48F7904E29DC76AC92222DA3B2A9F96F /* SSZipArchive-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A837E87D73A2E8E76ED4263D37C1C54 /* mz_compat.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CA13501E27029FB75FE5945E2B98301 /* mz_compat.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2C58D8099EAC30513BB6C983CA5871A2 /* mz_os.c in Sources */ = {isa = PBXBuildFile; fileRef = 50CC78E13C1B969AC2415BB6DE845C0E /* mz_os.c */; };
+		2CA9ACBD9E688F89B4F75AA4E0470FE9 /* SSZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D3F0D6223C1DCC995A43E311F3A801C /* SSZipArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CF53B742C125A1EC57607B50D1B8FC2 /* mz_strm_zlib.c in Sources */ = {isa = PBXBuildFile; fileRef = D2F48715569A09C217F3A798C152E1F5 /* mz_strm_zlib.c */; };
+		2E02F65868AC5D3AFAD6A78438768DFB /* SSZipCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = A1C41E24EBAD19D3B3B88B893E298A0F /* SSZipCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36E58CE59A304D96F1CA62E31F8F1CB3 /* mz_strm_wzaes.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E3D0066B7B182ABB8273F4D905110E3 /* mz_strm_wzaes.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		371B5B5DE1401059C34C75F7F49436C0 /* CWModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3204F44CC63D8DAB561595A9E0FB72 /* CWModule.swift */; };
+		3E379876171D961F081B4199BBD09769 /* CWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869CEA50B6F0E4CA92AB73E8192E967F /* CWViewController.swift */; };
+		418B14B6C874DA8647621DABD33C7303 /* mz_strm_mem.h in Headers */ = {isa = PBXBuildFile; fileRef = CE161202B7E79569F856E5E0E3269AD6 /* mz_strm_mem.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		45168661868F3390F0D02B9CE6BB3C8C /* mz_strm_split.c in Sources */ = {isa = PBXBuildFile; fileRef = 23ABD02F2CA5CB54AB141069B387FFDE /* mz_strm_split.c */; };
+		5D621FC954BC6DF8B6A28B801ED5FA54 /* mz.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C5A3CE4FBB92CCA696E22CF3079EC34 /* mz.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5E7C42212E2BC680FC730B5B14303199 /* ChattyWebviews-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 972B0748DA52DFB5F36639865942FD57 /* ChattyWebviews-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6917B754A793E739F2848B5AF006F49B /* mz_strm_pkcrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 17FCF959138302332352B5E8068E0AF1 /* mz_strm_pkcrypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6D16487E416282104F8A3104AFBC5E5F /* UpdateCheckRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2789FF3798A4E03978AD20696C4AFA35 /* UpdateCheckRequest.swift */; };
+		726E6352624863FF58FD1ADAAFA28F8B /* mz_strm_wzaes.c in Sources */ = {isa = PBXBuildFile; fileRef = C9E58B001EB497987FD1DFF3DE32CC3F /* mz_strm_wzaes.c */; };
+		73E69FC6BFEB546F489A533120393479 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935D811D009FCD2A44E6EEBE512DBB9F /* URLSessionHTTPClient.swift */; };
+		7751032F4B0627352C73FA04A27C94ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952925E838A0DE4D7BDC4EE54022633D /* Foundation.framework */; };
+		7ACA44F7D2824BBF13C6F4008374E975 /* InstanceConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9A8DD6A1ED90B0BD39F2F19CBF9138 /* InstanceConfiguration.swift */; };
+		817BFECC521D33E91934EF9850AEC079 /* mz_compat.c in Sources */ = {isa = PBXBuildFile; fileRef = BD48AE5C77737912F09E7C8AFA8D7702 /* mz_compat.c */; };
+		85F5BA47B3634F7173B2E49C085A2862 /* ChattyWebviews-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDCA685FB3FA7D2FAD012AB3CCC301A /* ChattyWebviews-dummy.m */; };
+		866444FEF7FED8112CF27A730358DD10 /* mz_zip_rw.h in Headers */ = {isa = PBXBuildFile; fileRef = 57E95BB8727FBE207C72DB27C18DB28A /* mz_zip_rw.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		88444C270D73FEFF6456955E98A6FF18 /* mz_strm_os.h in Headers */ = {isa = PBXBuildFile; fileRef = 473928B20B63CD5CABF18DB0785419CB /* mz_strm_os.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8BEB37D7DBD92238DCD6CCBD46ED48DC /* HTTPClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C9E40C021C5D76B842F83DF0B4CC3C /* HTTPClientProtocol.swift */; };
+		8CCC3C1F5B5E8456C3363A7B23FAA38D /* mz_strm_mem.c in Sources */ = {isa = PBXBuildFile; fileRef = 3A72147992643BBE15024E5BF9E86D1F /* mz_strm_mem.c */; };
 		8F92B4CBEE16D274106AE08639DA7F48 /* Pods-ChattyWebviews_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC072625D612C04649A5A89BD3BFCDA /* Pods-ChattyWebviews_Tests-dummy.m */; };
-		A8B14F16FBA8475F821A1EBEF1565DB1 /* InstanceConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63842D80CE3DD35477B19D622B1AC93C /* InstanceConfiguration.swift */; };
-		C43D3DF98DDD1E6847733CC042D86F7B /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F87D10B6D2D54AA89ADA1949207D94 /* Router.swift */; };
+		9415B0435A0642211B306D1BDCD7F591 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FE550E4822A858BCB7DA8274DD4F44 /* Router.swift */; };
+		9BD95255051F932CC67FCE3DC7DA6E8E /* Executor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAD452676FBA04E0C7B631729D52706 /* Executor.swift */; };
+		A228143331FFEC2E83455287C1A96642 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B2A0B779CE31153B2C0D8A7F8DC7FE /* Security.framework */; };
+		AB21ABB59B91FADD0AC5F8DD9E1904B6 /* mz_crypt.c in Sources */ = {isa = PBXBuildFile; fileRef = CBA7C727700C05AE10A909260EBFDF1F /* mz_crypt.c */; };
+		B05FA123563ACF6C570CD8C12B77DEF9 /* mz_strm.c in Sources */ = {isa = PBXBuildFile; fileRef = B612FAEFEA6DAF5ECDE4B48C7C4F428F /* mz_strm.c */; };
+		B0DCEEBEEB129322F54D1215C88152FE /* mz_strm_zlib.h in Headers */ = {isa = PBXBuildFile; fileRef = 246EE1920ED99537A3432AC5286A0221 /* mz_strm_zlib.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B553CC8026D480A7645175B16149A386 /* ChattyWebviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = B053707B49CFFA5E379D2D08CED84302 /* ChattyWebviews.swift */; };
+		B590F5D500BAFFECA5E493E0877AD2D9 /* SSZipArchive-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 427AA01759771C15EADA449A2961A778 /* SSZipArchive-dummy.m */; };
+		B79C86CE36DA0D3044B051DA863E30FD /* mz_strm_buf.c in Sources */ = {isa = PBXBuildFile; fileRef = 9423954ED25DDB008D2B61FC73D26B58 /* mz_strm_buf.c */; };
+		BEFC738FE789F458471CED1D45DE5F75 /* mz_strm.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CAF80929B8E8764AB09B4C9CDA97C55 /* mz_strm.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C43FECA2935479F9823D6BD0CB3CC371 /* HTTPResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAFC1C44497935E5C18F5BA19707A32 /* HTTPResponseHandler.swift */; };
+		C711016CA5E125F22746E5520197E214 /* mz_strm_split.h in Headers */ = {isa = PBXBuildFile; fileRef = 640494BB684109D53C602648DC944F02 /* mz_strm_split.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		C7471242C1EB1EB9A9B435C08FB9174B /* Pods-ChattyWebviews_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 079B5E432FCE19E2BFDDF4117A6BE381 /* Pods-ChattyWebviews_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FF939155726A8422C64C3059F992CD50 /* ChattyWebviews-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FD77818984B8CD7CE74EBFAB78884069 /* ChattyWebviews-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8D0746A530DB6ABE3245A0B31CDA3C7 /* ZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = F9A27455BD782250AC63D8A94365E34D /* ZipArchive.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D511C83165A086B26FD14399235C5650 /* mz_os_posix.c in Sources */ = {isa = PBXBuildFile; fileRef = 844712351A5F4BE39D77B65957E25C6F /* mz_os_posix.c */; };
+		D5DE8BE19B9AC2593798BC3C1FEE476A /* CWAssetHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E61A1F3CC35178C25D312F929C64A1 /* CWAssetHandler.swift */; };
+		F0A143254FDDEC0765C347F5C916A6A7 /* mz_strm_buf.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FD0BACFCB3CC2F5223BD235163D45BF /* mz_strm_buf.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F3B758FD1E3B6A5CAE3EBD23D0A633C7 /* mz_strm_pkcrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = 05BA496A8A0DBBF665E12DF6C1C7F5F2 /* mz_strm_pkcrypt.c */; };
+		FC6796A2C00EDCC8D1797E5B77643938 /* Pods-ChattyWebviews_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B76F29619296C785C6BC61250247B85F /* Pods-ChattyWebviews_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2E93035191839BB955C4058752C787D0 /* PBXContainerItemProxy */ = {
+		2635759729B962ED59D9F94D26BBF975 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5C90C69B04C22169B15E572349BEE652;
-			remoteInfo = ChattyWebviews;
+			remoteGlobalIDString = F60E38364AFF5E1349FF07415B944396;
+			remoteInfo = SSZipArchive;
 		};
-		E09BF58652149FEF7EA36FA5CEE319C6 /* PBXContainerItemProxy */ = {
+		6E29CE33CCA8180EBA7252C78D31DAA3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 6C6EA05AA107FD63AE7B0A14D585D596;
 			remoteInfo = "Pods-ChattyWebviews_Example";
 		};
+		7AD36037E22F7B3533C27E4933EFF52F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C90C69B04C22169B15E572349BEE652;
+			remoteInfo = ChattyWebviews;
+		};
+		EDADB55E9D466356406F5EE70869204E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F60E38364AFF5E1349FF07415B944396;
+			remoteInfo = SSZipArchive;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00FFC557322D8C7A78C92C27BFFC13FB /* CWAssetHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CWAssetHandler.swift; path = ChattyWebviews/Classes/CWAssetHandler.swift; sourceTree = "<group>"; };
-		066B5BAB97510EE3BE1B714F1A7E04D2 /* ChattyWebviews-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChattyWebviews-prefix.pch"; sourceTree = "<group>"; };
+		05BA496A8A0DBBF665E12DF6C1C7F5F2 /* mz_strm_pkcrypt.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_strm_pkcrypt.c; path = SSZipArchive/minizip/mz_strm_pkcrypt.c; sourceTree = "<group>"; };
+		05E61A1F3CC35178C25D312F929C64A1 /* CWAssetHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CWAssetHandler.swift; path = ChattyWebviews/Classes/CWAssetHandler.swift; sourceTree = "<group>"; };
 		079B5E432FCE19E2BFDDF4117A6BE381 /* Pods-ChattyWebviews_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ChattyWebviews_Tests-umbrella.h"; sourceTree = "<group>"; };
-		080F6F738133F4F568CF013967C15FBD /* ChattyWebviews.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ChattyWebviews.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		116455E7BB098688B37BD7CDE356E957 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		15873204AB1B28CBA62E154E2CCF7586 /* Pods-ChattyWebviews_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ChattyWebviews_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		17FCF959138302332352B5E8068E0AF1 /* mz_strm_pkcrypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_strm_pkcrypt.h; path = SSZipArchive/minizip/mz_strm_pkcrypt.h; sourceTree = "<group>"; };
 		1D1C763DFFCEF39E2FAF5BCA37633B29 /* Pods-ChattyWebviews_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ChattyWebviews_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		2B0A27EB299BD8B500F8AD25 /* ChattyWebviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChattyWebviews.swift; path = ChattyWebviews/Classes/ChattyWebviews.swift; sourceTree = "<group>"; };
-		2B0A27ED299BD95F00F8AD25 /* CWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CWViewController.swift; path = ChattyWebviews/Classes/CWViewController.swift; sourceTree = "<group>"; };
-		35F87D10B6D2D54AA89ADA1949207D94 /* Router.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Router.swift; path = ChattyWebviews/Classes/Router.swift; sourceTree = "<group>"; };
+		23ABD02F2CA5CB54AB141069B387FFDE /* mz_strm_split.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_strm_split.c; path = SSZipArchive/minizip/mz_strm_split.c; sourceTree = "<group>"; };
+		246EE1920ED99537A3432AC5286A0221 /* mz_strm_zlib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_strm_zlib.h; path = SSZipArchive/minizip/mz_strm_zlib.h; sourceTree = "<group>"; };
+		2789FF3798A4E03978AD20696C4AFA35 /* UpdateCheckRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UpdateCheckRequest.swift; path = ChattyWebviews/Classes/UpdateCheckRequest.swift; sourceTree = "<group>"; };
+		2B6F7F6B07F2978087DC1FAAF281F784 /* ChattyWebviews-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChattyWebviews-prefix.pch"; sourceTree = "<group>"; };
+		2E3D0066B7B182ABB8273F4D905110E3 /* mz_strm_wzaes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_strm_wzaes.h; path = SSZipArchive/minizip/mz_strm_wzaes.h; sourceTree = "<group>"; };
 		36B11B02A92C77CB7A86B3C860EF56A8 /* ChattyWebviews */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ChattyWebviews; path = ChattyWebviews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A72147992643BBE15024E5BF9E86D1F /* mz_strm_mem.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_strm_mem.c; path = SSZipArchive/minizip/mz_strm_mem.c; sourceTree = "<group>"; };
+		3B2556489A9106D0BAF77BE7180B4E74 /* ChattyWebviews.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ChattyWebviews.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3C067A10CCF6D6385802DF051D43A155 /* Pods-ChattyWebviews_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ChattyWebviews_Example-frameworks.sh"; sourceTree = "<group>"; };
-		45018D9576D843280EB9282FD5587791 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3D3F0D6223C1DCC995A43E311F3A801C /* SSZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSZipArchive.h; path = SSZipArchive/SSZipArchive.h; sourceTree = "<group>"; };
+		3E3BF4BF2521FA5808F989514C7EC9F6 /* SSZipArchive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SSZipArchive.debug.xcconfig; sourceTree = "<group>"; };
+		3F3204F44CC63D8DAB561595A9E0FB72 /* CWModule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CWModule.swift; path = ChattyWebviews/Classes/CWModule.swift; sourceTree = "<group>"; };
+		427AA01759771C15EADA449A2961A778 /* SSZipArchive-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SSZipArchive-dummy.m"; sourceTree = "<group>"; };
+		465D04C62E0A27BDAA6FA7553864B811 /* ChattyWebviews.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ChattyWebviews.modulemap; sourceTree = "<group>"; };
+		473928B20B63CD5CABF18DB0785419CB /* mz_strm_os.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_strm_os.h; path = SSZipArchive/minizip/mz_strm_os.h; sourceTree = "<group>"; };
+		48F7904E29DC76AC92222DA3B2A9F96F /* SSZipArchive-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSZipArchive-umbrella.h"; sourceTree = "<group>"; };
+		49CD09986F496C08770DC5BF839CE774 /* mz_zip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_zip.c; path = SSZipArchive/minizip/mz_zip.c; sourceTree = "<group>"; };
 		4C91D5DCB1AF7E3DCB09D0F13655B4C8 /* Pods-ChattyWebviews_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ChattyWebviews_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4C97796A68E3416C1E0F893499E1417B /* mz_zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_zip.h; path = SSZipArchive/minizip/mz_zip.h; sourceTree = "<group>"; };
+		4CDDEBCA568A303501173CF9553E1851 /* mz_zip_rw.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_zip_rw.c; path = SSZipArchive/minizip/mz_zip_rw.c; sourceTree = "<group>"; };
 		4DED37243595D44730B63F7F19712D44 /* Pods-ChattyWebviews_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ChattyWebviews_Tests.modulemap"; sourceTree = "<group>"; };
+		50CC78E13C1B969AC2415BB6DE845C0E /* mz_os.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_os.c; path = SSZipArchive/minizip/mz_os.c; sourceTree = "<group>"; };
 		52BD0950210E01D5FAB48344438C15A7 /* Pods-ChattyWebviews_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ChattyWebviews_Example.release.xcconfig"; sourceTree = "<group>"; };
 		52DF8407395CB636A09DC2A296B95656 /* Pods-ChattyWebviews_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ChattyWebviews_Example-Info.plist"; sourceTree = "<group>"; };
 		52F5E2EB6C30F08C1331D965874ACF32 /* Pods-ChattyWebviews_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ChattyWebviews_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		57E95BB8727FBE207C72DB27C18DB28A /* mz_zip_rw.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_zip_rw.h; path = SSZipArchive/minizip/mz_zip_rw.h; sourceTree = "<group>"; };
 		5C771270C4518A888AAB6598434D521D /* Pods-ChattyWebviews_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ChattyWebviews_Example"; path = Pods_ChattyWebviews_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		63842D80CE3DD35477B19D622B1AC93C /* InstanceConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InstanceConfiguration.swift; path = ChattyWebviews/Classes/InstanceConfiguration.swift; sourceTree = "<group>"; };
+		612C3A67E7222944D0653D881CF882D6 /* ChattyWebviews-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ChattyWebviews-Info.plist"; sourceTree = "<group>"; };
+		61C9E40C021C5D76B842F83DF0B4CC3C /* HTTPClientProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPClientProtocol.swift; path = ChattyWebviews/Classes/HTTPClientProtocol.swift; sourceTree = "<group>"; };
+		640494BB684109D53C602648DC944F02 /* mz_strm_split.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_strm_split.h; path = SSZipArchive/minizip/mz_strm_split.h; sourceTree = "<group>"; };
+		6C5A3CE4FBB92CCA696E22CF3079EC34 /* mz.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz.h; path = SSZipArchive/minizip/mz.h; sourceTree = "<group>"; };
+		6CAF80929B8E8764AB09B4C9CDA97C55 /* mz_strm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_strm.h; path = SSZipArchive/minizip/mz_strm.h; sourceTree = "<group>"; };
 		71D437840ABA095890CD579DACA7BE12 /* Pods-ChattyWebviews_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ChattyWebviews_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7AE3274AE9BC305DC84991875A728E0C /* SSZipArchive.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SSZipArchive.modulemap; sourceTree = "<group>"; };
+		7C78651DA303BBF93B4D4144DC18B38A /* ModuleSynchronizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModuleSynchronizer.swift; path = ChattyWebviews/Classes/ModuleSynchronizer.swift; sourceTree = "<group>"; };
+		7EDCA685FB3FA7D2FAD012AB3CCC301A /* ChattyWebviews-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ChattyWebviews-dummy.m"; sourceTree = "<group>"; };
+		7FD0BACFCB3CC2F5223BD235163D45BF /* mz_strm_buf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_strm_buf.h; path = SSZipArchive/minizip/mz_strm_buf.h; sourceTree = "<group>"; };
+		813B931EBBD527AC2E04B07881966C70 /* mz_crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_crypt.h; path = SSZipArchive/minizip/mz_crypt.h; sourceTree = "<group>"; };
+		844712351A5F4BE39D77B65957E25C6F /* mz_os_posix.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_os_posix.c; path = SSZipArchive/minizip/mz_os_posix.c; sourceTree = "<group>"; };
+		869CEA50B6F0E4CA92AB73E8192E967F /* CWViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CWViewController.swift; path = ChattyWebviews/Classes/CWViewController.swift; sourceTree = "<group>"; };
 		88AF83CF167209DDE466D6E46CB29004 /* Pods-ChattyWebviews_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ChattyWebviews_Example-dummy.m"; sourceTree = "<group>"; };
-		9D6B992440B19CB8822457B61156F27C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8CA13501E27029FB75FE5945E2B98301 /* mz_compat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_compat.h; path = SSZipArchive/minizip/mz_compat.h; sourceTree = "<group>"; };
+		91B23470DEB9A986332BEB5034234BC7 /* SSZipArchive */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SSZipArchive; path = SSZipArchive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92AF83AA43A3C6ADEF2DA8C5C4FFFD2B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		935D811D009FCD2A44E6EEBE512DBB9F /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLSessionHTTPClient.swift; path = ChattyWebviews/Classes/URLSessionHTTPClient.swift; sourceTree = "<group>"; };
+		9423954ED25DDB008D2B61FC73D26B58 /* mz_strm_buf.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_strm_buf.c; path = SSZipArchive/minizip/mz_strm_buf.c; sourceTree = "<group>"; };
+		952925E838A0DE4D7BDC4EE54022633D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		96191102B73395BA79D28920DB94CF15 /* FIleDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FIleDownloader.swift; path = ChattyWebviews/Classes/FIleDownloader.swift; sourceTree = "<group>"; };
+		972B0748DA52DFB5F36639865942FD57 /* ChattyWebviews-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChattyWebviews-umbrella.h"; sourceTree = "<group>"; };
+		97FE550E4822A858BCB7DA8274DD4F44 /* Router.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Router.swift; path = ChattyWebviews/Classes/Router.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F787961E0994AA5934713C5C4D8A51F /* mz_os.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_os.h; path = SSZipArchive/minizip/mz_os.h; sourceTree = "<group>"; };
+		A1610757E92EC78F6121B1CA0742912E /* SSZipArchive-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSZipArchive-prefix.pch"; sourceTree = "<group>"; };
+		A1C41E24EBAD19D3B3B88B893E298A0F /* SSZipCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSZipCommon.h; path = SSZipArchive/SSZipCommon.h; sourceTree = "<group>"; };
+		A54C4BB32D5D51418952AED9D4618E87 /* SSZipArchive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SSZipArchive.release.xcconfig; sourceTree = "<group>"; };
 		A96A57A33E3E576E79E8AFD54E6CB246 /* Pods-ChattyWebviews_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ChattyWebviews_Example.modulemap"; sourceTree = "<group>"; };
+		AB9A8DD6A1ED90B0BD39F2F19CBF9138 /* InstanceConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InstanceConfiguration.swift; path = ChattyWebviews/Classes/InstanceConfiguration.swift; sourceTree = "<group>"; };
+		B053707B49CFFA5E379D2D08CED84302 /* ChattyWebviews.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChattyWebviews.swift; path = ChattyWebviews/Classes/ChattyWebviews.swift; sourceTree = "<group>"; };
+		B612FAEFEA6DAF5ECDE4B48C7C4F428F /* mz_strm.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_strm.c; path = SSZipArchive/minizip/mz_strm.c; sourceTree = "<group>"; };
 		B76F29619296C785C6BC61250247B85F /* Pods-ChattyWebviews_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ChattyWebviews_Example-umbrella.h"; sourceTree = "<group>"; };
+		B9C9792493F427CE1B3F880539EAE334 /* SSZipArchive-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SSZipArchive-Info.plist"; sourceTree = "<group>"; };
 		BA8C361D384F0CD9A8AB6ECC59C2F27F /* Pods-ChattyWebviews_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ChattyWebviews_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		BD48AE5C77737912F09E7C8AFA8D7702 /* mz_compat.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_compat.c; path = SSZipArchive/minizip/mz_compat.c; sourceTree = "<group>"; };
 		BFC072625D612C04649A5A89BD3BFCDA /* Pods-ChattyWebviews_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ChattyWebviews_Tests-dummy.m"; sourceTree = "<group>"; };
 		C0E83E2039482685D3EAA66627A3C69C /* Pods-ChattyWebviews_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ChattyWebviews_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		C3A75E835C3C744D0D182353A9902D41 /* ChattyWebviews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChattyWebviews.debug.xcconfig; sourceTree = "<group>"; };
-		CA5740A225697E8E94EE63DAC8F8596E /* ChattyWebviews-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ChattyWebviews-Info.plist"; sourceTree = "<group>"; };
-		D0F64C876C26E3A30F189C7E47116E88 /* ChattyWebviews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChattyWebviews.release.xcconfig; sourceTree = "<group>"; };
+		C29F02B018B0DC44C2AC05DFCFFA3EDE /* mz_strm_os_posix.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_strm_os_posix.c; path = SSZipArchive/minizip/mz_strm_os_posix.c; sourceTree = "<group>"; };
+		C3B2A0B779CE31153B2C0D8A7F8DC7FE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		C49F3D5D11AC73AF817CC61E3875BB32 /* ChattyWebviews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChattyWebviews.debug.xcconfig; sourceTree = "<group>"; };
+		C9E58B001EB497987FD1DFF3DE32CC3F /* mz_strm_wzaes.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_strm_wzaes.c; path = SSZipArchive/minizip/mz_strm_wzaes.c; sourceTree = "<group>"; };
+		CBA7C727700C05AE10A909260EBFDF1F /* mz_crypt.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_crypt.c; path = SSZipArchive/minizip/mz_crypt.c; sourceTree = "<group>"; };
+		CE161202B7E79569F856E5E0E3269AD6 /* mz_strm_mem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_strm_mem.h; path = SSZipArchive/minizip/mz_strm_mem.h; sourceTree = "<group>"; };
+		CEAD452676FBA04E0C7B631729D52706 /* Executor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Executor.swift; path = ChattyWebviews/Classes/Executor.swift; sourceTree = "<group>"; };
+		CFAFC1C44497935E5C18F5BA19707A32 /* HTTPResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPResponseHandler.swift; path = ChattyWebviews/Classes/HTTPResponseHandler.swift; sourceTree = "<group>"; };
+		D2F48715569A09C217F3A798C152E1F5 /* mz_strm_zlib.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_strm_zlib.c; path = SSZipArchive/minizip/mz_strm_zlib.c; sourceTree = "<group>"; };
 		D6DC06EFB040B3419A4DD2F37561EC41 /* Pods-ChattyWebviews_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ChattyWebviews_Tests"; path = Pods_ChattyWebviews_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EF743021E52B37783F80AA9560CD9FA3 /* ChattyWebviews-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ChattyWebviews-dummy.m"; sourceTree = "<group>"; };
 		F2AA8C871FC5D4248C6005AAC49EAB7E /* Pods-ChattyWebviews_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ChattyWebviews_Tests-Info.plist"; sourceTree = "<group>"; };
-		FA11EF1FA9B062C1F3ECA2FD3E20931B /* ChattyWebviews.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ChattyWebviews.modulemap; sourceTree = "<group>"; };
-		FD77818984B8CD7CE74EBFAB78884069 /* ChattyWebviews-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChattyWebviews-umbrella.h"; sourceTree = "<group>"; };
+		F78F73AC1E27DF387460E6C9D3BFF7BD /* SSZipArchive.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSZipArchive.m; path = SSZipArchive/SSZipArchive.m; sourceTree = "<group>"; };
+		F86615AF86FD3D110F4C387667DF2EAA /* mz_crypt_apple.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_crypt_apple.c; path = SSZipArchive/minizip/mz_crypt_apple.c; sourceTree = "<group>"; };
+		F9A27455BD782250AC63D8A94365E34D /* ZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZipArchive.h; path = SSZipArchive/include/ZipArchive.h; sourceTree = "<group>"; };
+		FC42657B0C2B92C06E7E1F9DE59CDBBF /* ChattyWebviews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChattyWebviews.release.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		093BC254503A68901F3415BA8E688365 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7751032F4B0627352C73FA04A27C94ED /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		11C8B73D7E312F1E172118FE884222E6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -89,41 +206,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9CD9A627EA0BFEE1CECF21742D363B43 /* Frameworks */ = {
+		358B2BDBD0B6FA79F60BB90435CE438B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84863253653CB6AFC0F7FDC2D2FAAFDD /* Foundation.framework in Frameworks */,
+				11DCB929E22467E8AEB754F4BEB1009A /* Foundation.framework in Frameworks */,
+				A228143331FFEC2E83455287C1A96642 /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D8861B192A79A50CCDAA252A07F1411E /* Frameworks */ = {
+		FF93C657B52F2CCCE5E68B38E1A1D35A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				521249FBE952A012D45A546EC2218B36 /* Foundation.framework in Frameworks */,
+				0CE5061AE088B950FF214009DDC81936 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		11BC8F31DFF069042794E77C861F3A8F /* Products */ = {
+		0FA2A5580338A9A3086D63F608CBE447 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				36B11B02A92C77CB7A86B3C860EF56A8 /* ChattyWebviews */,
 				5C771270C4518A888AAB6598434D521D /* Pods-ChattyWebviews_Example */,
 				D6DC06EFB040B3419A4DD2F37561EC41 /* Pods-ChattyWebviews_Tests */,
+				91B23470DEB9A986332BEB5034234BC7 /* SSZipArchive */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		38AC4CBEFAA6898D90DA0CC78DDE88B7 /* Development Pods */ = {
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5207C0BA300C9C97D3BA954784ED048A /* ChattyWebviews */,
+				7CE426AC267333500FABE7BA0A5A42A0 /* iOS */,
 			);
-			name = "Development Pods";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		4816BFFB145DCB87622624F43A0B999C /* Pods-ChattyWebviews_Example */ = {
@@ -143,27 +262,20 @@
 			path = "Target Support Files/Pods-ChattyWebviews_Example";
 			sourceTree = "<group>";
 		};
-		5207C0BA300C9C97D3BA954784ED048A /* ChattyWebviews */ = {
+		4C2EFC1AA7AA397C59A05B54BB923DDA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				00FFC557322D8C7A78C92C27BFFC13FB /* CWAssetHandler.swift */,
-				63842D80CE3DD35477B19D622B1AC93C /* InstanceConfiguration.swift */,
-				35F87D10B6D2D54AA89ADA1949207D94 /* Router.swift */,
-				A346097878B53DF94F974971D8E50A13 /* Pod */,
-				A168128EAF0D922CEF204FFC7D6C7DA8 /* Support Files */,
-				2B0A27EB299BD8B500F8AD25 /* ChattyWebviews.swift */,
-				2B0A27ED299BD95F00F8AD25 /* CWViewController.swift */,
+				D6763B28DAE5A018269BC667952753BB /* SSZipArchive */,
 			);
-			name = ChattyWebviews;
-			path = ../..;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+		5930783859A0CA7318DACFDED3D683DC /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+				FC639C3A7CA84E8803EAC2CE46B3FF8C /* ChattyWebviews */,
 			);
-			name = iOS;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		6057F9BD845B0A7E146871431ED613FF /* Targets Support Files */ = {
@@ -175,27 +287,36 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		A168128EAF0D922CEF204FFC7D6C7DA8 /* Support Files */ = {
+		7CE426AC267333500FABE7BA0A5A42A0 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				FA11EF1FA9B062C1F3ECA2FD3E20931B /* ChattyWebviews.modulemap */,
-				EF743021E52B37783F80AA9560CD9FA3 /* ChattyWebviews-dummy.m */,
-				CA5740A225697E8E94EE63DAC8F8596E /* ChattyWebviews-Info.plist */,
-				066B5BAB97510EE3BE1B714F1A7E04D2 /* ChattyWebviews-prefix.pch */,
-				FD77818984B8CD7CE74EBFAB78884069 /* ChattyWebviews-umbrella.h */,
-				C3A75E835C3C744D0D182353A9902D41 /* ChattyWebviews.debug.xcconfig */,
-				D0F64C876C26E3A30F189C7E47116E88 /* ChattyWebviews.release.xcconfig */,
+				952925E838A0DE4D7BDC4EE54022633D /* Foundation.framework */,
+				C3B2A0B779CE31153B2C0D8A7F8DC7FE /* Security.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		B41666A46B2294CBC860F8DA7F178022 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				465D04C62E0A27BDAA6FA7553864B811 /* ChattyWebviews.modulemap */,
+				7EDCA685FB3FA7D2FAD012AB3CCC301A /* ChattyWebviews-dummy.m */,
+				612C3A67E7222944D0653D881CF882D6 /* ChattyWebviews-Info.plist */,
+				2B6F7F6B07F2978087DC1FAAF281F784 /* ChattyWebviews-prefix.pch */,
+				972B0748DA52DFB5F36639865942FD57 /* ChattyWebviews-umbrella.h */,
+				C49F3D5D11AC73AF817CC61E3875BB32 /* ChattyWebviews.debug.xcconfig */,
+				FC42657B0C2B92C06E7E1F9DE59CDBBF /* ChattyWebviews.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/ChattyWebviews";
 			sourceTree = "<group>";
 		};
-		A346097878B53DF94F974971D8E50A13 /* Pod */ = {
+		BCE3E3BB4684F414B04421D10C12DF89 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				080F6F738133F4F568CF013967C15FBD /* ChattyWebviews.podspec */,
-				9D6B992440B19CB8822457B61156F27C /* LICENSE */,
-				45018D9576D843280EB9282FD5587791 /* README.md */,
+				3B2556489A9106D0BAF77BE7180B4E74 /* ChattyWebviews.podspec */,
+				116455E7BB098688B37BD7CDE356E957 /* LICENSE */,
+				92AF83AA43A3C6ADEF2DA8C5C4FFFD2B /* README.md */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
@@ -204,9 +325,10 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				38AC4CBEFAA6898D90DA0CC78DDE88B7 /* Development Pods */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				11BC8F31DFF069042794E77C861F3A8F /* Products */,
+				5930783859A0CA7318DACFDED3D683DC /* Development Pods */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				4C2EFC1AA7AA397C59A05B54BB923DDA /* Pods */,
+				0FA2A5580338A9A3086D63F608CBE447 /* Products */,
 				6057F9BD845B0A7E146871431ED613FF /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -227,30 +349,127 @@
 			path = "Target Support Files/Pods-ChattyWebviews_Tests";
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		D6763B28DAE5A018269BC667952753BB /* SSZipArchive */ = {
 			isa = PBXGroup;
 			children = (
-				578452D2E740E91742655AC8F1636D1F /* iOS */,
+				6C5A3CE4FBB92CCA696E22CF3079EC34 /* mz.h */,
+				BD48AE5C77737912F09E7C8AFA8D7702 /* mz_compat.c */,
+				8CA13501E27029FB75FE5945E2B98301 /* mz_compat.h */,
+				CBA7C727700C05AE10A909260EBFDF1F /* mz_crypt.c */,
+				813B931EBBD527AC2E04B07881966C70 /* mz_crypt.h */,
+				F86615AF86FD3D110F4C387667DF2EAA /* mz_crypt_apple.c */,
+				50CC78E13C1B969AC2415BB6DE845C0E /* mz_os.c */,
+				9F787961E0994AA5934713C5C4D8A51F /* mz_os.h */,
+				844712351A5F4BE39D77B65957E25C6F /* mz_os_posix.c */,
+				B612FAEFEA6DAF5ECDE4B48C7C4F428F /* mz_strm.c */,
+				6CAF80929B8E8764AB09B4C9CDA97C55 /* mz_strm.h */,
+				9423954ED25DDB008D2B61FC73D26B58 /* mz_strm_buf.c */,
+				7FD0BACFCB3CC2F5223BD235163D45BF /* mz_strm_buf.h */,
+				3A72147992643BBE15024E5BF9E86D1F /* mz_strm_mem.c */,
+				CE161202B7E79569F856E5E0E3269AD6 /* mz_strm_mem.h */,
+				473928B20B63CD5CABF18DB0785419CB /* mz_strm_os.h */,
+				C29F02B018B0DC44C2AC05DFCFFA3EDE /* mz_strm_os_posix.c */,
+				05BA496A8A0DBBF665E12DF6C1C7F5F2 /* mz_strm_pkcrypt.c */,
+				17FCF959138302332352B5E8068E0AF1 /* mz_strm_pkcrypt.h */,
+				23ABD02F2CA5CB54AB141069B387FFDE /* mz_strm_split.c */,
+				640494BB684109D53C602648DC944F02 /* mz_strm_split.h */,
+				C9E58B001EB497987FD1DFF3DE32CC3F /* mz_strm_wzaes.c */,
+				2E3D0066B7B182ABB8273F4D905110E3 /* mz_strm_wzaes.h */,
+				D2F48715569A09C217F3A798C152E1F5 /* mz_strm_zlib.c */,
+				246EE1920ED99537A3432AC5286A0221 /* mz_strm_zlib.h */,
+				49CD09986F496C08770DC5BF839CE774 /* mz_zip.c */,
+				4C97796A68E3416C1E0F893499E1417B /* mz_zip.h */,
+				4CDDEBCA568A303501173CF9553E1851 /* mz_zip_rw.c */,
+				57E95BB8727FBE207C72DB27C18DB28A /* mz_zip_rw.h */,
+				3D3F0D6223C1DCC995A43E311F3A801C /* SSZipArchive.h */,
+				F78F73AC1E27DF387460E6C9D3BFF7BD /* SSZipArchive.m */,
+				A1C41E24EBAD19D3B3B88B893E298A0F /* SSZipCommon.h */,
+				F9A27455BD782250AC63D8A94365E34D /* ZipArchive.h */,
+				F324569DC22301903DC55528E6F2E407 /* Support Files */,
 			);
-			name = Frameworks;
+			name = SSZipArchive;
+			path = SSZipArchive;
+			sourceTree = "<group>";
+		};
+		F324569DC22301903DC55528E6F2E407 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7AE3274AE9BC305DC84991875A728E0C /* SSZipArchive.modulemap */,
+				427AA01759771C15EADA449A2961A778 /* SSZipArchive-dummy.m */,
+				B9C9792493F427CE1B3F880539EAE334 /* SSZipArchive-Info.plist */,
+				A1610757E92EC78F6121B1CA0742912E /* SSZipArchive-prefix.pch */,
+				48F7904E29DC76AC92222DA3B2A9F96F /* SSZipArchive-umbrella.h */,
+				3E3BF4BF2521FA5808F989514C7EC9F6 /* SSZipArchive.debug.xcconfig */,
+				A54C4BB32D5D51418952AED9D4618E87 /* SSZipArchive.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SSZipArchive";
+			sourceTree = "<group>";
+		};
+		FC639C3A7CA84E8803EAC2CE46B3FF8C /* ChattyWebviews */ = {
+			isa = PBXGroup;
+			children = (
+				B053707B49CFFA5E379D2D08CED84302 /* ChattyWebviews.swift */,
+				05E61A1F3CC35178C25D312F929C64A1 /* CWAssetHandler.swift */,
+				3F3204F44CC63D8DAB561595A9E0FB72 /* CWModule.swift */,
+				869CEA50B6F0E4CA92AB73E8192E967F /* CWViewController.swift */,
+				CEAD452676FBA04E0C7B631729D52706 /* Executor.swift */,
+				96191102B73395BA79D28920DB94CF15 /* FIleDownloader.swift */,
+				61C9E40C021C5D76B842F83DF0B4CC3C /* HTTPClientProtocol.swift */,
+				CFAFC1C44497935E5C18F5BA19707A32 /* HTTPResponseHandler.swift */,
+				AB9A8DD6A1ED90B0BD39F2F19CBF9138 /* InstanceConfiguration.swift */,
+				7C78651DA303BBF93B4D4144DC18B38A /* ModuleSynchronizer.swift */,
+				97FE550E4822A858BCB7DA8274DD4F44 /* Router.swift */,
+				2789FF3798A4E03978AD20696C4AFA35 /* UpdateCheckRequest.swift */,
+				935D811D009FCD2A44E6EEBE512DBB9F /* URLSessionHTTPClient.swift */,
+				BCE3E3BB4684F414B04421D10C12DF89 /* Pod */,
+				B41666A46B2294CBC860F8DA7F178022 /* Support Files */,
+			);
+			name = ChattyWebviews;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		46B04F445055A7E40D34AEAAFCC5B150 /* Headers */ = {
+		073253FC6293024BBDB731D7B32C21B8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B3914D9EDF1BBA539DF936FFE829129 /* Pods-ChattyWebviews_Example-umbrella.h in Headers */,
+				5E7C42212E2BC680FC730B5B14303199 /* ChattyWebviews-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5CD0393A43900B6F6CD8F4113B94F7BF /* Headers */ = {
+		97E51B91BEAA205F2F0D4C6755DD6EF7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF939155726A8422C64C3059F992CD50 /* ChattyWebviews-umbrella.h in Headers */,
+				5D621FC954BC6DF8B6A28B801ED5FA54 /* mz.h in Headers */,
+				2A837E87D73A2E8E76ED4263D37C1C54 /* mz_compat.h in Headers */,
+				02AAC861DAAA2976C067A2F5FEB5BF94 /* mz_crypt.h in Headers */,
+				0A27198DA5786BE01E020E5623239829 /* mz_os.h in Headers */,
+				BEFC738FE789F458471CED1D45DE5F75 /* mz_strm.h in Headers */,
+				F0A143254FDDEC0765C347F5C916A6A7 /* mz_strm_buf.h in Headers */,
+				418B14B6C874DA8647621DABD33C7303 /* mz_strm_mem.h in Headers */,
+				88444C270D73FEFF6456955E98A6FF18 /* mz_strm_os.h in Headers */,
+				6917B754A793E739F2848B5AF006F49B /* mz_strm_pkcrypt.h in Headers */,
+				C711016CA5E125F22746E5520197E214 /* mz_strm_split.h in Headers */,
+				36E58CE59A304D96F1CA62E31F8F1CB3 /* mz_strm_wzaes.h in Headers */,
+				B0DCEEBEEB129322F54D1215C88152FE /* mz_strm_zlib.h in Headers */,
+				1D8E5738C2F0008C17205B541A414EA6 /* mz_zip.h in Headers */,
+				866444FEF7FED8112CF27A730358DD10 /* mz_zip_rw.h in Headers */,
+				2CA9ACBD9E688F89B4F75AA4E0470FE9 /* SSZipArchive.h in Headers */,
+				2A473E6E69997AF54A9256666C3A65A2 /* SSZipArchive-umbrella.h in Headers */,
+				2E02F65868AC5D3AFAD6A78438768DFB /* SSZipCommon.h in Headers */,
+				C8D0746A530DB6ABE3245A0B31CDA3C7 /* ZipArchive.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C013047C42EB0F992BAC85257C4A57D3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC6796A2C00EDCC8D1797E5B77643938 /* Pods-ChattyWebviews_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,16 +486,17 @@
 /* Begin PBXNativeTarget section */
 		5C90C69B04C22169B15E572349BEE652 /* ChattyWebviews */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC68CF9136FC40F4BE9016458CD9E1DF /* Build configuration list for PBXNativeTarget "ChattyWebviews" */;
+			buildConfigurationList = AB53527155EE75B22124926CBB26F15A /* Build configuration list for PBXNativeTarget "ChattyWebviews" */;
 			buildPhases = (
-				5CD0393A43900B6F6CD8F4113B94F7BF /* Headers */,
-				22DF145C9DEEADF3028F80310AEC6DD6 /* Sources */,
-				D8861B192A79A50CCDAA252A07F1411E /* Frameworks */,
-				9BDA96907088DAEFBA0E797390ADFAF0 /* Resources */,
+				073253FC6293024BBDB731D7B32C21B8 /* Headers */,
+				4E6833AD01423D9850226748589A26BE /* Sources */,
+				FF93C657B52F2CCCE5E68B38E1A1D35A /* Frameworks */,
+				5BA07015A528FED4902A2B87D5CB1FDD /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				87A64DFE71A945786614105E158EEE32 /* PBXTargetDependency */,
 			);
 			name = ChattyWebviews;
 			productName = ChattyWebviews;
@@ -295,7 +515,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				A7D20F0D8F45C05EFE4DEC5F756446FD /* PBXTargetDependency */,
+				8039952C7876BF1C80CFBF5AF7E4DD13 /* PBXTargetDependency */,
 			);
 			name = "Pods-ChattyWebviews_Tests";
 			productName = Pods_ChattyWebviews_Tests;
@@ -304,21 +524,40 @@
 		};
 		6C6EA05AA107FD63AE7B0A14D585D596 /* Pods-ChattyWebviews_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7699D026683633FEA19EFB8C83BCD6F2 /* Build configuration list for PBXNativeTarget "Pods-ChattyWebviews_Example" */;
+			buildConfigurationList = EA7429AB3AF627F186E4E85D740BDA73 /* Build configuration list for PBXNativeTarget "Pods-ChattyWebviews_Example" */;
 			buildPhases = (
-				46B04F445055A7E40D34AEAAFCC5B150 /* Headers */,
-				38C0E80DDA310B87E4A5E093C8FD708B /* Sources */,
-				9CD9A627EA0BFEE1CECF21742D363B43 /* Frameworks */,
-				C2A91CB48E2B73B8FDE44126CD702BA6 /* Resources */,
+				C013047C42EB0F992BAC85257C4A57D3 /* Headers */,
+				8FE403793050E584EB866DAB52A3692E /* Sources */,
+				093BC254503A68901F3415BA8E688365 /* Frameworks */,
+				D4CD455F9D91F0A46A5DF5A12AE4FE54 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8424DE5CF5D24DCC5DB6E559C57E9C0E /* PBXTargetDependency */,
+				76410D5805E00A56BE26598BF06CBD01 /* PBXTargetDependency */,
+				CF128F89CFAF0AFB2151F7C8F4849866 /* PBXTargetDependency */,
 			);
 			name = "Pods-ChattyWebviews_Example";
 			productName = Pods_ChattyWebviews_Example;
 			productReference = 5C771270C4518A888AAB6598434D521D /* Pods-ChattyWebviews_Example */;
+			productType = "com.apple.product-type.framework";
+		};
+		F60E38364AFF5E1349FF07415B944396 /* SSZipArchive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE6360A856B0F1D2C8645B0DC0ACFFF5 /* Build configuration list for PBXNativeTarget "SSZipArchive" */;
+			buildPhases = (
+				97E51B91BEAA205F2F0D4C6755DD6EF7 /* Headers */,
+				DBAAA2579FAC7ABD47C8DE753795ABB4 /* Sources */,
+				358B2BDBD0B6FA79F60BB90435CE438B /* Frameworks */,
+				A71E82B7A5A0887950E7C0418A27795D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SSZipArchive;
+			productName = SSZipArchive;
+			productReference = 91B23470DEB9A986332BEB5034234BC7 /* SSZipArchive */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -339,13 +578,14 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 11BC8F31DFF069042794E77C861F3A8F /* Products */;
+			productRefGroup = 0FA2A5580338A9A3086D63F608CBE447 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				5C90C69B04C22169B15E572349BEE652 /* ChattyWebviews */,
 				6C6EA05AA107FD63AE7B0A14D585D596 /* Pods-ChattyWebviews_Example */,
 				68FCB4856C4302A5308133EF44523202 /* Pods-ChattyWebviews_Tests */,
+				F60E38364AFF5E1349FF07415B944396 /* SSZipArchive */,
 			);
 		};
 /* End PBXProject section */
@@ -358,14 +598,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9BDA96907088DAEFBA0E797390ADFAF0 /* Resources */ = {
+		5BA07015A528FED4902A2B87D5CB1FDD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C2A91CB48E2B73B8FDE44126CD702BA6 /* Resources */ = {
+		A71E82B7A5A0887950E7C0418A27795D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4CD455F9D91F0A46A5DF5A12AE4FE54 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -375,24 +622,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		22DF145C9DEEADF3028F80310AEC6DD6 /* Sources */ = {
+		4E6833AD01423D9850226748589A26BE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B0A27EC299BD8B500F8AD25 /* ChattyWebviews.swift in Sources */,
-				2C963A4A8421E1ECB72BEAA41F699085 /* ChattyWebviews-dummy.m in Sources */,
-				0F9B8E47A9DF3D7F945E22E890F05B56 /* CWAssetHandler.swift in Sources */,
-				A8B14F16FBA8475F821A1EBEF1565DB1 /* InstanceConfiguration.swift in Sources */,
-				2B0A27EE299BD95F00F8AD25 /* CWViewController.swift in Sources */,
-				C43D3DF98DDD1E6847733CC042D86F7B /* Router.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		38C0E80DDA310B87E4A5E093C8FD708B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3EFFA31F037FA1176C5FA2A087F07B2E /* Pods-ChattyWebviews_Example-dummy.m in Sources */,
+				B553CC8026D480A7645175B16149A386 /* ChattyWebviews.swift in Sources */,
+				85F5BA47B3634F7173B2E49C085A2862 /* ChattyWebviews-dummy.m in Sources */,
+				D5DE8BE19B9AC2593798BC3C1FEE476A /* CWAssetHandler.swift in Sources */,
+				371B5B5DE1401059C34C75F7F49436C0 /* CWModule.swift in Sources */,
+				3E379876171D961F081B4199BBD09769 /* CWViewController.swift in Sources */,
+				9BD95255051F932CC67FCE3DC7DA6E8E /* Executor.swift in Sources */,
+				2493E8764466C484CED4C8BCC11EFF87 /* FIleDownloader.swift in Sources */,
+				8BEB37D7DBD92238DCD6CCBD46ED48DC /* HTTPClientProtocol.swift in Sources */,
+				C43FECA2935479F9823D6BD0CB3CC371 /* HTTPResponseHandler.swift in Sources */,
+				7ACA44F7D2824BBF13C6F4008374E975 /* InstanceConfiguration.swift in Sources */,
+				0375E08EAB918325A4289CF6B6E87F3A /* ModuleSynchronizer.swift in Sources */,
+				9415B0435A0642211B306D1BDCD7F591 /* Router.swift in Sources */,
+				6D16487E416282104F8A3104AFBC5E5F /* UpdateCheckRequest.swift in Sources */,
+				73E69FC6BFEB546F489A533120393479 /* URLSessionHTTPClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,24 +651,99 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8FE403793050E584EB866DAB52A3692E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				036A14195520D2E82157EC3B0A10FBEA /* Pods-ChattyWebviews_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBAAA2579FAC7ABD47C8DE753795ABB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				817BFECC521D33E91934EF9850AEC079 /* mz_compat.c in Sources */,
+				AB21ABB59B91FADD0AC5F8DD9E1904B6 /* mz_crypt.c in Sources */,
+				280AE257C0AD6BFDAE8DDD0369847D08 /* mz_crypt_apple.c in Sources */,
+				2C58D8099EAC30513BB6C983CA5871A2 /* mz_os.c in Sources */,
+				D511C83165A086B26FD14399235C5650 /* mz_os_posix.c in Sources */,
+				B05FA123563ACF6C570CD8C12B77DEF9 /* mz_strm.c in Sources */,
+				B79C86CE36DA0D3044B051DA863E30FD /* mz_strm_buf.c in Sources */,
+				8CCC3C1F5B5E8456C3363A7B23FAA38D /* mz_strm_mem.c in Sources */,
+				1B9C2086B907706D59D859665452D9AC /* mz_strm_os_posix.c in Sources */,
+				F3B758FD1E3B6A5CAE3EBD23D0A633C7 /* mz_strm_pkcrypt.c in Sources */,
+				45168661868F3390F0D02B9CE6BB3C8C /* mz_strm_split.c in Sources */,
+				726E6352624863FF58FD1ADAAFA28F8B /* mz_strm_wzaes.c in Sources */,
+				2CF53B742C125A1EC57607B50D1B8FC2 /* mz_strm_zlib.c in Sources */,
+				1301FB27E180FF2BFAE5332B74CE15BE /* mz_zip.c in Sources */,
+				094AD0ED540C7E98194B31D241FC0736 /* mz_zip_rw.c in Sources */,
+				09E4053B24126DF4D4F6AF852F506F0D /* SSZipArchive.m in Sources */,
+				B590F5D500BAFFECA5E493E0877AD2D9 /* SSZipArchive-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8424DE5CF5D24DCC5DB6E559C57E9C0E /* PBXTargetDependency */ = {
+		76410D5805E00A56BE26598BF06CBD01 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ChattyWebviews;
 			target = 5C90C69B04C22169B15E572349BEE652 /* ChattyWebviews */;
-			targetProxy = 2E93035191839BB955C4058752C787D0 /* PBXContainerItemProxy */;
+			targetProxy = 7AD36037E22F7B3533C27E4933EFF52F /* PBXContainerItemProxy */;
 		};
-		A7D20F0D8F45C05EFE4DEC5F756446FD /* PBXTargetDependency */ = {
+		8039952C7876BF1C80CFBF5AF7E4DD13 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-ChattyWebviews_Example";
 			target = 6C6EA05AA107FD63AE7B0A14D585D596 /* Pods-ChattyWebviews_Example */;
-			targetProxy = E09BF58652149FEF7EA36FA5CEE319C6 /* PBXContainerItemProxy */;
+			targetProxy = 6E29CE33CCA8180EBA7252C78D31DAA3 /* PBXContainerItemProxy */;
+		};
+		87A64DFE71A945786614105E158EEE32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SSZipArchive;
+			target = F60E38364AFF5E1349FF07415B944396 /* SSZipArchive */;
+			targetProxy = EDADB55E9D466356406F5EE70869204E /* PBXContainerItemProxy */;
+		};
+		CF128F89CFAF0AFB2151F7C8F4849866 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SSZipArchive;
+			target = F60E38364AFF5E1349FF07415B944396 /* SSZipArchive */;
+			targetProxy = 2635759729B962ED59D9F94D26BBF975 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		14C110BE6CD10E81DABA76C88CAFDE04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A54C4BB32D5D51418952AED9D4618E87 /* SSZipArchive.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SSZipArchive/SSZipArchive-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SSZipArchive/SSZipArchive-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SSZipArchive/SSZipArchive.modulemap";
+				PRODUCT_MODULE_NAME = SSZipArchive;
+				PRODUCT_NAME = SSZipArchive;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		3FD1E868A0AE1A321BE78EBBC7ECBCBC /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 52F5E2EB6C30F08C1331D965874ACF32 /* Pods-ChattyWebviews_Tests.release.xcconfig */;
@@ -457,7 +779,7 @@
 			};
 			name = Release;
 		};
-		8E4A8CFCFEE3E1EAED2F8CAFF37A254B /* Release */ = {
+		5F4835F1782F831EFB8814813A1A99EB /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 52BD0950210E01D5FAB48344438C15A7 /* Pods-ChattyWebviews_Example.release.xcconfig */;
 			buildSettings = {
@@ -547,7 +869,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -587,9 +910,9 @@
 			};
 			name = Debug;
 		};
-		9686B2FAA19B4544763A74EE605DFCDC /* Debug */ = {
+		AE14655F58DFBB4A00E4E6C482182C2A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C3A75E835C3C744D0D182353A9902D41 /* ChattyWebviews.debug.xcconfig */;
+			baseConfigurationReference = C49F3D5D11AC73AF817CC61E3875BB32 /* ChattyWebviews.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -613,73 +936,6 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A33D737B4FB7D3CC5DDE47B7A305E660 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D0F64C876C26E3A30F189C7E47116E88 /* ChattyWebviews.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ChattyWebviews/ChattyWebviews-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ChattyWebviews/ChattyWebviews-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ChattyWebviews/ChattyWebviews.modulemap";
-				PRODUCT_MODULE_NAME = ChattyWebviews;
-				PRODUCT_NAME = ChattyWebviews;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		A6F0105F54D4FA77CD67797299A38B48 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C0E83E2039482685D3EAA66627A3C69C /* Pods-ChattyWebviews_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ChattyWebviews_Example/Pods-ChattyWebviews_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ChattyWebviews_Example/Pods-ChattyWebviews_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -752,6 +1008,103 @@
 			};
 			name = Debug;
 		};
+		DB548F7541C8F38DDB0ABD7B92B4AAE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0E83E2039482685D3EAA66627A3C69C /* Pods-ChattyWebviews_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ChattyWebviews_Example/Pods-ChattyWebviews_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ChattyWebviews_Example/Pods-ChattyWebviews_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E10D8A9013A5D6A49F5B4FF7D7EB9C78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC42657B0C2B92C06E7E1F9DE59CDBBF /* ChattyWebviews.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ChattyWebviews/ChattyWebviews-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ChattyWebviews/ChattyWebviews-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ChattyWebviews/ChattyWebviews.modulemap";
+				PRODUCT_MODULE_NAME = ChattyWebviews;
+				PRODUCT_NAME = ChattyWebviews;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E96B82F38F92FB7AECFA673379F2715E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E3BF4BF2521FA5808F989514C7EC9F6 /* SSZipArchive.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SSZipArchive/SSZipArchive-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SSZipArchive/SSZipArchive-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SSZipArchive/SSZipArchive.modulemap";
+				PRODUCT_MODULE_NAME = SSZipArchive;
+				PRODUCT_NAME = SSZipArchive;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -773,20 +1126,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7699D026683633FEA19EFB8C83BCD6F2 /* Build configuration list for PBXNativeTarget "Pods-ChattyWebviews_Example" */ = {
+		AB53527155EE75B22124926CBB26F15A /* Build configuration list for PBXNativeTarget "ChattyWebviews" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A6F0105F54D4FA77CD67797299A38B48 /* Debug */,
-				8E4A8CFCFEE3E1EAED2F8CAFF37A254B /* Release */,
+				AE14655F58DFBB4A00E4E6C482182C2A /* Debug */,
+				E10D8A9013A5D6A49F5B4FF7D7EB9C78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DC68CF9136FC40F4BE9016458CD9E1DF /* Build configuration list for PBXNativeTarget "ChattyWebviews" */ = {
+		AE6360A856B0F1D2C8645B0DC0ACFFF5 /* Build configuration list for PBXNativeTarget "SSZipArchive" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9686B2FAA19B4544763A74EE605DFCDC /* Debug */,
-				A33D737B4FB7D3CC5DDE47B7A305E660 /* Release */,
+				E96B82F38F92FB7AECFA673379F2715E /* Debug */,
+				14C110BE6CD10E81DABA76C88CAFDE04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA7429AB3AF627F186E4E85D740BDA73 /* Build configuration list for PBXNativeTarget "Pods-ChattyWebviews_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB548F7541C8F38DDB0ABD7B92B4AAE8 /* Debug */,
+				5F4835F1782F831EFB8814813A1A99EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

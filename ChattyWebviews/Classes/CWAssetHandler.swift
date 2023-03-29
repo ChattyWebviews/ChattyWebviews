@@ -49,7 +49,11 @@ internal class CWAssetHandler: NSObject, WKURLSchemeHandler {
                 headers["Content-Length"] = String(data.count)
                 let response = HTTPURLResponse(url: localUrl, statusCode: 206, httpVersion: nil, headerFields: headers)
                 urlSchemeTask.didReceive(response!)
-                try fileHandle.close()
+                if #available(iOS 13.0, *) {
+                    try fileHandle.close()
+                } else {
+                    // Fallback on earlier versions
+                }
             } else {
                 if isMediaExtension(pathExtension: url.pathExtension) {
                     data = try Data(contentsOf: fileUrl, options: Data.ReadingOptions.mappedIfSafe)

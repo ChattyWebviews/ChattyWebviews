@@ -12,7 +12,6 @@ class FileDownloader {
     static func loadFileSync(url: URL, completion: @escaping (String?, Error?) -> Void)
     {
         
-        //let destinationUrl = Bundle.main.bundleURL.appendingPathComponent(url.lastPathComponent)
         let destinationUrl = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent(url.lastPathComponent)
 
         if FileManager().fileExists(atPath: destinationUrl.path)

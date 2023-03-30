@@ -44,7 +44,6 @@ extension HTTPRequestHandler {
                     //handler(.failure(.errorResponse("Parsing data failed")))
                 }
             
-            
         case .failure(let error):
             if let err = error as? URLSessionHTTPClientError {
               
@@ -78,8 +77,6 @@ extension HTTPRequestHandler {
         }
         
         return nil
-        
-        
         
     }
     

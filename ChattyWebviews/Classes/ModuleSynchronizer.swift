@@ -21,35 +21,34 @@ public class ModuleSynchronizer: HTTPRequestHandler, Executor {
         self.executionQueue = DispatchQueue.main
     }
     
-    public func updateIfNeeded(module: CWModule, email: String, appId: String) {
+    public func updateIfNeeded(module: CWModule, email: String, appId: String, completion: @escaping (Bool) -> Void) {
         self.checkForUpdate(email: email, appId: appId, moduleName: module.name, hash: module.currentHash) { modulePath, hash in
-            if let modulePath = modulePath, let hash = hash {
-                
-                DispatchQueue.global(qos: .userInitiated).async {
-                    self.downloadPackage(url: modulePath) { zipUrl in
+            guard let modulePath = modulePath, let hash = hash else {
+                completion(false)
+                return
+            }
+            DispatchQueue.global(qos: .userInitiated).async {
+                self.downloadPackage(url: modulePath) { zipUrl in
+                    
+                    if let zipUrl = zipUrl {
                         
-                        if let zipUrl = zipUrl {
-                            
-                            self.unzipPackage(for: module, zipUrl: zipUrl) { success in
-                                if (success) {
-                                    module.currentHash = hash
-                                    self.updateModuleLocation(module: module)
-                                    //TODO: save module changes (in local storage)
-                                    if #available(iOS 16.0, *) {
-                                        self.deleteZipArchive(url: URL(filePath: zipUrl.absoluteString))
-                                    } else {
-                                        self.deleteZipArchive(url: URL(fileURLWithPath: zipUrl.absoluteString))
-                                    }
-                                    
-                                    
+                        self.unzipPackage(for: module, zipUrl: zipUrl) { success in
+                            if (success) {
+                                module.update(hash: hash)
+                                self.updateModuleLocation(module: module)
+                                if #available(iOS 16.0, *) {
+                                    self.deleteZipArchive(url: URL(filePath: zipUrl.absoluteString))
+                                } else {
+                                    self.deleteZipArchive(url: URL(fileURLWithPath: zipUrl.absoluteString))
                                 }
                             }
+                            completion(success)
                         }
-                        
+                    } else {
+                        completion(false)
                     }
+                    
                 }
-                
-                
             }
         }
     }
@@ -121,7 +120,7 @@ public class ModuleSynchronizer: HTTPRequestHandler, Executor {
         
         let newUrl = CWModulesParentDir.appendingPathComponent("\(module.name)-update")
         do {
-            guard let location = module.appLocation else { return }
+            guard let location = module.appLocationURL else { return }
             try fileManager.removeItem(at: location)//handle errors and add some checks
             try fileManager.moveItem(at: newUrl, to: location)
         } catch {

@@ -27,32 +27,21 @@ public class WebViewFactory {
         
         //TODO: if the module doesnt have defaultLocation (that is - is not in the resource dir)
         //we will have to download it first so the webview will show a loading image
-        //let location = Bundle.main.resourceURL!.appendingPathComponent(module.name).appendingPathComponent("www")
-        guard let location = module.appLocation else {
-            print("No default package provided")
+        guard FileManager.default.fileExists(atPath: module.appLocationURL.path) else {
+            print("WARNING: No default package provided. When re-running from Xcode fetched packages are deleted.")
             return nil
         }
         let vc = CWViewController()
-        vc.configure(appLocation: location, path: path)
+        vc.configure(appLocation: module.appLocationURL, path: path)
         return vc
     }
     
-    public static func saveModules(_ modules: [CWModule]) {
-        let encoder = JSONEncoder()
-        if let encoded = try? encoder.encode(modules) {
-            let defaults = UserDefaults.standard
-            defaults.set(encoded, forKey: "cw_modules")
-        }
+    public static func getModules() -> [CWModule] {
+        return CWModules.shared.getModules()
     }
     
-    public static func getModules() -> [CWModule]? {
-        if let savedModules = UserDefaults.standard.object(forKey: "cw_modules") as? Data {
-            let decoder = JSONDecoder()
-            if let loadedModules = try? decoder.decode(Array<CWModule>.self, from: savedModules) {
-                return loadedModules
-            }
-        }
-        return nil
+    public static func initModules(modules: [CWModule]) {
+        CWModules.shared.initModules(modules: modules)
     }
     
 }

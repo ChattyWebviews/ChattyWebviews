@@ -10,6 +10,7 @@
 		0BD17CBA943C6EDDCA1B7215 /* Pods_ChattyWebviews_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06E8EE8048AA59AB49B03223 /* Pods_ChattyWebviews_Example.framework */; };
 		2B0A27E6299BD76600F8AD25 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0A27E5299BD76600F8AD25 /* MainTabBarViewController.swift */; };
 		2B0A280D29A6A11600F8AD25 /* testModule in Resources */ = {isa = PBXBuildFile; fileRef = 2B0A280C29A6A11600F8AD25 /* testModule */; };
+		2B0A2A6329DC10E2009A246A /* Bridging-Header.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0A2A6229DC10E2009A246A /* Bridging-Header.m */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -36,6 +37,10 @@
 		2686389B457017BD03D5DDAA /* Pods-ChattyWebviews_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChattyWebviews_Example.debug.xcconfig"; path = "Target Support Files/Pods-ChattyWebviews_Example/Pods-ChattyWebviews_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		2B0A27E5299BD76600F8AD25 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		2B0A280C29A6A11600F8AD25 /* testModule */ = {isa = PBXFileReference; lastKnownFileType = folder; path = testModule; sourceTree = "<group>"; };
+		2B0A2A6029DC10E1009A246A /* ChattyWebviews_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChattyWebviews_Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		2B0A2A6129DC10E2009A246A /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		2B0A2A6229DC10E2009A246A /* Bridging-Header.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Bridging-Header.m"; sourceTree = "<group>"; };
+		2B0A2A6429DC128B009A246A /* ns-v8ios-runtime */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "ns-v8ios-runtime"; path = "../../ns-v8ios-runtime"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* ChattyWebviews_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChattyWebviews_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +78,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B0A2A5A29DC089D009A246A /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				2B0A2A6429DC128B009A246A /* ns-v8ios-runtime */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
 		3A49E9C0D775CBF5AFE066A6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +100,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				2B0A2A5A29DC089D009A246A /* Packages */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for ChattyWebviews */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -111,11 +125,14 @@
 				2B0A280C29A6A11600F8AD25 /* testModule */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				2B0A2A6129DC10E2009A246A /* Bridging-Header.h */,
+				2B0A2A6229DC10E2009A246A /* Bridging-Header.m */,
 				2B0A27E5299BD76600F8AD25 /* MainTabBarViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				2B0A2A6029DC10E1009A246A /* ChattyWebviews_Example-Bridging-Header.h */,
 			);
 			name = "Example for ChattyWebviews";
 			path = ChattyWebviews;
@@ -219,7 +236,7 @@
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = H6KAAZFWNY;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1420;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -342,6 +359,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B0A2A6329DC10E2009A246A /* Bridging-Header.m in Sources */,
 				2B0A27E6299BD76600F8AD25 /* MainTabBarViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
@@ -490,6 +508,7 @@
 			baseConfigurationReference = 2686389B457017BD03D5DDAA /* Pods-ChattyWebviews_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = H6KAAZFWNY;
 				INFOPLIST_FILE = ChattyWebviews/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -497,6 +516,8 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ChattyWebviews/ChattyWebviews_Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
@@ -507,6 +528,7 @@
 			baseConfigurationReference = 699BA983D39F33A869F0025D /* Pods-ChattyWebviews_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = H6KAAZFWNY;
 				INFOPLIST_FILE = ChattyWebviews/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -514,6 +536,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ChattyWebviews/ChattyWebviews_Example-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};

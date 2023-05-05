@@ -77,7 +77,9 @@ public class CWViewController: UIViewController, WKNavigationDelegate, WKScriptM
         let jsonText = String(data: jsonData,
                               encoding: .utf8)!
         let script = """
-        window['publish']('\(message.topic)', \(jsonText));
+        window.dispatchEvent(new CustomEvent("ChattyPubSub", {
+              detail: { topic: '\(message.topic)', message: \(jsonText) },
+          }));
         """
         
         webview.evaluateJavaScript(script) { (result, error) in

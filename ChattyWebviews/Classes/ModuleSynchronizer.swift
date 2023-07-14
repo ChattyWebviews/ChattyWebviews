@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import SSZipArchive
+import ZipArchive
 
 public class ModuleSynchronizer: HTTPRequestHandler, Executor {
     typealias UpdateCheckResult = Result<UpdateCheckResponse, Error>

@@ -20,7 +20,7 @@ let package = Package(
     targets: [
         .target(
             name: "ChattyWebviews",
-            dependencies: ["ZipArchive"]
+            dependencies: ["ZipArchive"],
             path: "ChattyWebviews",
             exclude: []
             

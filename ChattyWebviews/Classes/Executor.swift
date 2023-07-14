@@ -4,6 +4,7 @@
 //
 //  Created by Teodor Dermendzhiev on 22.03.23.
 //
+import Foundation
 
 protocol Executor {
     var executionQueue: DispatchQueue { get }

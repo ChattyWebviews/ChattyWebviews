@@ -21,6 +21,7 @@ let package = Package(
         .target(
             name: "ChattyWebviews",
             path: "ChattyWebviews",
+            dependencies: ["ZipArchive"]
             exclude: []
             
         )

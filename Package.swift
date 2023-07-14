@@ -15,7 +15,7 @@ let package = Package(
             targets: ["ChattyWebviews"])
     ],
     dependencies: [
-        .package(url: "https://github.com/ZipArchive/ZipArchive.git", from: "2.2.0"),
+        .package(url: "https://github.com/ZipArchive/ZipArchive.git", from: "2.4.2"),
     ],
     targets: [
         .target(

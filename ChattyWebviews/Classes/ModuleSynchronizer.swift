@@ -11,6 +11,8 @@ import ZipArchive
 public class ModuleSynchronizer: HTTPRequestHandler, Executor {
     typealias UpdateCheckResult = Result<UpdateCheckResponse, Error>
     
+    public static var updateCheckUrl: String?
+    
     let httpClient: HTTPClientProtocol
     internal let executionQueue: DispatchQueue
     
@@ -54,8 +56,14 @@ public class ModuleSynchronizer: HTTPRequestHandler, Executor {
     }
     
      func checkForUpdate(email: String, appId: String, moduleName: String, hash: String?,  completion: @escaping (String?, String?) -> Void) {
+         
+         guard let url = ModuleSynchronizer.updateCheckUrl else {
+             print("Please set updateCheckUrl")
+             return
+         }
+         
         let reqData = UpdateCheckRequest(email: email, appId: appId, moduleName: moduleName, currentMd5: hash)
-        httpClient.post(URL(string: "https://europe-west1-appwraps-releases.cloudfunctions.net/checkForUpdate")!, body: reqData) { result in
+         httpClient.post(URL(string: url)!, body: reqData) { result in
             self.execute {
                 
                 self.handleResponse(of: UpdateCheckResponse.self, result: result) { updateResult in

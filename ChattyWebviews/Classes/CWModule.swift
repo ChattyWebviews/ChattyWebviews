@@ -70,7 +70,7 @@ public class CWModule: Codable {
     public var currentHash: String?
     
     
-    public init(name: String, currentHash: String?, location: CWModuleLocation = .Resources) {
+    public init(name: String, currentHash: String? = nil, location: CWModuleLocation = .Resources) {
         self.name = name
         self.currentHash = currentHash
         self.location = location

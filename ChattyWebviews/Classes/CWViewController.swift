@@ -34,11 +34,6 @@ public class CWViewController: UIViewController, WKNavigationDelegate, WKScriptM
 
     public override func viewDidLoad() {
         super.viewDidLoad()
-
-    }
-    
-    public override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
         let url = "cw://localhost" + (path ?? "")
         
         if !prepared {
@@ -48,7 +43,7 @@ public class CWViewController: UIViewController, WKNavigationDelegate, WKScriptM
             webview.load(URLRequest(url: URL(string: url)!))
             prepared = true
         }
-        
+
     }
     
     func configure(folderName: String, path: String?) {

@@ -13,14 +13,11 @@ let package = Package(
         .library(
             name: "ChattyWebviews",
             targets: ["ChattyWebviews"])
-    ],
-    dependencies: [
-        .package(url: "https://github.com/ZipArchive/ZipArchive.git", exact: "2.4.2")
-    ],
+    ],,
     targets: [
         .target(
             name: "ChattyWebviews",
-            dependencies: ["ZipArchive"],
+            dependencies: [],
             path: "ChattyWebviews",
             exclude: []
             

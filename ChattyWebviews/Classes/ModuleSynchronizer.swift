@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import ZipArchive
+// import SSZipArchive
 
 public class ModuleSynchronizer: HTTPRequestHandler, Executor {
     typealias UpdateCheckResult = Result<UpdateCheckResponse, Error>
@@ -101,11 +101,11 @@ public class ModuleSynchronizer: HTTPRequestHandler, Executor {
             }
         }
         
-        SSZipArchive.unzipFile(atPath: zipUrl.absoluteString, toDestination: newModuleFolder.path) { entry, zipInfo, entryNumber, totalProgress in
-            //progress
-        } completionHandler: { path, success, error in
-            completion(success)
-        }
+        // SSZipArchive.unzipFile(atPath: zipUrl.absoluteString, toDestination: newModuleFolder.path) { entry, zipInfo, entryNumber, totalProgress in
+        //     //progress
+        // } completionHandler: { path, success, error in
+        //     completion(success)
+        // }
     }
     
     func downloadPackage(url: String, completion: @escaping (URL?) -> Void) {

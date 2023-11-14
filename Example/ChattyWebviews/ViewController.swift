@@ -8,7 +8,6 @@
 
 import UIKit
 import ChattyWebviews
-import NativeScript 
 
 class ViewController: UIViewController {
 

@@ -13,7 +13,7 @@ let package = Package(
         .library(
             name: "ChattyWebviews",
             targets: ["ChattyWebviews"])
-    ],,
+    ],
     targets: [
         .target(
             name: "ChattyWebviews",

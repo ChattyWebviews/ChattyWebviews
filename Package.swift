@@ -7,7 +7,7 @@ import PackageDescription
 let package = Package(
     name: "ChattyWebviews",
     platforms: [
-        .macOS(.v10_14), .iOS(.v16), .tvOS(.v13)
+        .macOS(.v10_14), .iOS(.v13), .tvOS(.v13)
     ],
     products: [
         .library(
